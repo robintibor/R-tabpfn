@@ -12,6 +12,7 @@ License: Unclear
 Encoding: UTF-8
 Depends: R (>= 3.6)
 Imports:
-    reticulate (>= 1.32)
+    reticulate,
+    R6
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
