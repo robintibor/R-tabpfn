@@ -27,7 +27,8 @@ An R6 class to interface with the Python TabPFNClassifier.
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
-\item{\code{access_token}}{Access token for authentication.}
+\item{\code{access_token}}{Access token for authentication.
+Fit data, will simply upload the data to the server}
 }
 \if{html}{\out{</div>}}
 }
@@ -45,7 +46,8 @@ An R6 class to interface with the Python TabPFNClassifier.
 \describe{
 \item{\code{X}}{A data frame or matrix of features.}
 
-\item{\code{y}}{A vector of target values.}
+\item{\code{y}}{A vector of target values.
+Predict the data.}
 }
 \if{html}{\out{</div>}}
 }

@@ -1,9 +1,3 @@
-# Load necessary namespaces
-library(R6)
-library(reticulate)
-
-np <- reticulate::import("numpy")
-
 #' TabPFN Classifier
 #'
 #' An R6 class to interface with the Python TabPFNClassifier.
@@ -35,11 +29,10 @@ TabPFNClassifier <- R6Class("TabPFNClassifier",
       self$service_client$authorize(access_token)
     },
     
-    #' 
+    #' Fit data, will simply upload the data to the server
     #'
     #' @param X A data frame or matrix of features.
     #' @param y A vector of target values.
-    #' @export
     fit = function(X, y) {
       if (!is.data.frame(X) && !is.matrix(X)) {
         stop("X must be a data frame or matrix.")
@@ -59,11 +52,10 @@ TabPFNClassifier <- R6Class("TabPFNClassifier",
       })
     },
     
-    #' 
+    #' Predict the data.
     #'
     #' @param X A data frame or matrix of features.
     #' @return A vector of predictions.
-    #' @export
     predict = function(X) {
       if (!is.data.frame(X) && !is.matrix(X)) {
         stop("X must be a data frame or matrix.")
