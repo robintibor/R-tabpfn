@@ -5,9 +5,8 @@ Version: 0.01.0.0000
 Authors@R: c(
   person("Robin", "Schirrmeister", email = "robintibor@gmail.com", role = c("aut", "cph"))
 )
-
 Description: Interface to 'TabPFN' 
-License: ?
+License: Unclear
 Encoding: UTF-8
 Depends: R (>= 3.6)
 Imports:
