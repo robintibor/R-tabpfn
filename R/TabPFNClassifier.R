@@ -2,6 +2,7 @@
 library(R6)
 library(reticulate)
 
+np <- reticulate::import("numpy")
 
 #' TabPFN Classifier
 #'
