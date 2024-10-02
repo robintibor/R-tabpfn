@@ -1,0 +1,15 @@
+Package: tabpfn
+Type: Package
+Title: R Interface to 'TabPFN'
+Version: 0.01.0.0000
+Authors@R: c(
+  person("Robin", "Schirrmeister", role = c("aut", "cph")),
+  )
+Description: Interface to 'TabPFN' 
+License: ?
+Encoding: UTF-8
+Depends: R (>= 3.6)
+Imports:
+    reticulate (>= 1.32)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
