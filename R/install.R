@@ -6,7 +6,6 @@
 #'
 #' @export
 install_tabpfn <-
-function(envname = "r-tabpfn",
-         ) {
+function(envname = "r-tabpfn") {
   writelines("hi")
 }
